@@ -49,14 +49,14 @@ public:
     // TODO 3a: constructor that initializes first_ and second_
     
         // replace with member initialization
-        Pair(A f, B s) : first_(first_), second_(second_) {}
+        Pair(A f, B s) : first_(f), second_(s) {}
 
     // TODO 3b: getters (const)
     A getFirst() const  { return first_(); }   // <-- replace
     B getSecond() const { return second_(); }   // <-- replace
 
     // TODO 3c: setters
-    void setFirst(A value)  { first_ =value;}           // <-- replace
+    void setFirst(A value)  { first_=value;}           // <-- replace
     void setSecond(B value) {second_=value;}           // <-- replace
 
     // TODO 3d: swapValues - swap first_ and second_ (assume A == B when called)
